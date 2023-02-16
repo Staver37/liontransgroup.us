@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application</title>
+    <link rel="icon" type="image/x-icon" href="lion_icon.png">
+    <link rel="stylesheet" href="./aplication.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
+</head>
+<body>
+    <nav>
+        <div class="logo"><a href="index.html"><img src="logo.png" ></a></div>
+        <div class="openMenu"><i class="fa fa-bars"></i></div>
+        <ul class="mainMenu">
+            <div class="logo-M"><img src="logo.png" ></div> 
+            <li><a href="index.html">Home</a></li>
+            <li><a href="owner_operators.html">Owner Operators</a></li>
+            <li><a href="company_drivers.html">Company Drivers</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <div class="closeMenu"><i class="fa fa-times"></i></div>
+            <span class="icons">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-github"></i>
+            </span>
+        </ul>
+    </nav>
+
+    <!-- aplication -->
+    <div class="application">
+        <h1>Application</h1>
+        <form  action="https://formsubmit.co/staver37@gmail.com" method="POST">
+            <div class="form-Content">
+                <div class="form-text"> 
+                    First Name:<span class="rheader">*</span>
+                </div>
+                <div class="form-input">
+                    <input type="text" name="First Name"placeholder="First name" required>
+                </div>
+            </div>    
+           
+            <div class="form-Content">
+                <div class="form-text"> 
+                    Middle Name:
+                </div>
+                <div class="form-input">
+                    <input type="text" name="Middle Name"placeholder="Middle name" >
+                </div>
+            </div>    
+
+            <div class="form-Content">
+                <div class="form-text"> 
+                    Last Name:<span class="rheader">*</span>
+                </div>
+                <div class="form-input">
+                    <input type="text" name="Last Name"placeholder="Last Name" required>
+                </div>
+            </div>    
+
+            <div class="form-Content">
+                <div class="form-text"> 
+                    suffix:<span class="rheader">*</span>
+                </div>
+                <div class="form-input">
+                    <select class="suffix" name="Suffix">
+                        <option  value=""></option>
+                        <option value="JR" >JR</option>
+                        <option value="II" >II</option>
+                        <option value="Sr" >Sr</option>
+                        <option value="III" >III</option>
+                        <option value="IV" >IV</option>
+                        <option value="V" >V</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="form-Content">
+                <div class="form-text"> 
+                    Date of Birth:<span class="rheader">*</span>
+                </div>
+                <div class="form-input">
+                    <input type="date" id="birthday" name="birthday" required>
+                </div>
+            </div>   
+
+            <br>
+            <div class="form-Content">
+                <div class="form-text"> 
+                    adrress<span class="rheader">*</span>
+                </div>
+                <div class="form-input">
+                    <input type="text" id="adrress" name="Adress" required>
+                </div>
+            </div>   
+            <div class="form-Content">
+                <div class="form-text"> 
+                    city<span class="rheader">*</span>
+                </div>
+                <div class="form-input">
+                    <input type="text" id="City" name="City" required>
+                </div>
+            </div>  
+            <div class="form-Content">
+                <div class="form-text"> 
+                    state<span class="rheader">*</span>
+                </div>
+                <div class="form-input">
+                    <input type="text" id="State" name="State" required>
+                </div>
+            </div>  
+            <div class="form-Content">
+                <div class="form-text"> 
+                    zip code<span class="rheader">*</span>
+                </div>
+                <div class="form-input">
+                    <input type="text" id="Zip Code" name="Zip Code" required>
+                </div>
+            </div>  
+
+            <br>
+
+            <div class="form-Content">
+                <div class="form-text"> 
+                    Do You have valid CDL?:<span class="rheader">*</span>
+                </div>
+                <div class="form-input">
+                    <select class="CDL" name="CDL" required>
+                        <option  value=""> </option>
+                        <option value="YES">YES</option>
+                        <option value="NO">NO</option>
+                    </select>
+                </div>
+            </div>   
+
+            <div class="form-Content">
+                <div class="form-text"> 
+                    Driver license:<span class="rheader">*</span>
+                </div>
+                <div class="form-input">
+                    <input type="text" name="Driver License" title="A ###-####-####" placeholder="A ###-####-####" required/>
+                </div>
+            </div> 
+
+            <div class="form-Content">
+                <div class="form-text"> 
+                    Email:<span class="rheader">*</span>
+                </div>
+                <div class="form-input">
+                    <input type="email" name="email" placeholder="Email Adress" required>
+                </div>
+            </div> 
+
+            <div class="form-Content">
+                <div class="form-text"> 
+                    Phone Nr:<span class="rheader">*</span>
+                </div>
+                <div class="form-input">
+                    <input type="phone number" name="Phone Nr" placeholder="PhoneNr" required>
+                </div>
+            </div>   
+
+            <div class="form-Content">
+                <div class="form-text"> 
+                    Possition:<span class="rheader">*</span>
+                </div>
+                <div class="form-input">
+                    <select class="possition" name="Possition" required>
+                        <option  value=""></option>
+                        <option value="Company Driver">Company Driver</option>
+                        <option value="Owner Operator">Owner Operator</option>
+                        <option value="Driver for Owner/Operator">Driver for Owner/Operator</option>
+                        <option value="Lease purchase" >Lease purchase</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+            </div>   
+
+            <div class="form-Content">
+                <div class="form-text"> 
+                    Experence :<span class="rheader">*</span>
+                </div>
+                <div class="form-input">
+                    <input type="text" name="Experence" placeholder="Experence" required>
+                </div>
+            </div>
+
+            <div class="form-Content">
+                <div style=" width: 100px;">
+
+                </div>
+                <div class="form-button"> 
+                    <button type="submit">Apply</button>
+                </div>
+                <input type="hidden" name="_next" value="https://liontransgroup.us/thankyou.html">
+
+                
+                <div class="form-input">
+                </div>
+            </div>
+        </form>
+    </div>    
+
+    <div class="Completion_Progress">
+           <h2>Thank you for your interest in Lion Trans Group Inc</h2>  
+            <br>
+            <p>If you encounter any difficulties during this process, please contact Lion Trans Group LLC at (331)345-9440.</p> 
+            <p> In compliance with Federal and State equal employment opportunity laws, qualified applicants are considered for all positions without regard to race, color, religion, sex, national origin, age, marital status, veteran status, non-job related disability, or any other protected group status. </p>
+            <p> The security and privacy of your data is important to us - <u>the data entered by you will be safe and will be used only for employment purposes. </u> </p>
+       
+    </div>
+ 
+
+        
+    <script src="./app.js"></script>
+    <div class="livechat">
+        <script src="https://www.momentcrm.com/embed"></script>
+        <script>
+            MomentCRM('init', 
+                {
+                'teamVanityId': 't1',
+                'doChat': true,
+                'doTracking': true,
+                });
+        </script>
+    </div>
+
+    <footer>
+        <p>© 2023 Lion Trans Group Inc. All rights reserved</p>
+    </footer>
+</body>
+</html>

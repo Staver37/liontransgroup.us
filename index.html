@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="icon" type="image/x-icon" href="lion_icon.png">
+    <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
+</head>
+<body>
+        <nav>
+            <div class="logo"><a href="index.html"><img src="logo.png" ></a></div>
+            <div class="openMenu"><i class="fa fa-bars"></i></div>
+            <ul class="mainMenu">
+                <div class="logo-M"><img src="logo.png" ></div> 
+                <li><a href="index.html">Home</a></li>
+                <li><a href="owner_operators.html">Owner Operators</a></li>
+                <li><a href="company_drivers.html">Company Drivers</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <div class="closeMenu"><i class="fa fa-times"></i></div>
+                <span class="icons">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-github"></i>
+                </span>
+            </ul>
+        </nav>
+
+    
+            <div class="aplication">
+                <h1 >Apply for possition</h1> 
+                <div class="form-Content">
+                    <form action="https://formsubmit.co/staver37@gmail.com" method="POST">
+                        <div> 
+                            First Name:<span class="rheader">*</span>
+                            <input type="text" name="First Name"placeholder="First name" required>
+                        </div> 
+                        <div> 
+                            Middle Name:
+                            <input type="text" name="Middle Name"placeholder="Middle name" >
+                        </div> 
+                        <div> 
+                            Last Name:<span class="rheader">*</span>
+                            <input type="text" name="Last Name"placeholder="Last Name" required>
+                        </div>
+                        Suffix: 
+                            <select class="suffix" name="Suffix">
+                                <option  value=""></option>
+                                <option value="JR" >JR</option>
+                                <option value="II" >II</option>
+                                <option value="Sr" >Sr</option>
+                                <option value="III" >III</option>
+                                <option value="IV" >IV</option>
+                                <option value="V" >V</option>
+                            </select>
+                        <div>
+                            Date of Birth:
+                            <input type="date" id="birthday" name="birthday" required>
+                        </div>  
+                        <br>    
+                        <div>
+                            Do You have valid CDL?:<span class="rheader">*</span>
+                            <select class="CDL" name="CDL" required>
+                                <option  value=""> </option>
+                                <option value="YES">YES</option>
+                                <option value="NO">NO</option>
+                            </select>
+                        </div>  
+                        <div> 
+                            Driver license:
+                            <input type="text" name="Driver License" title="A ###-####-####" placeholder="A ###-####-####"/>
+                        </div>               
+                        <div>
+                            Email:<span class="rheader">*</span>
+                            <input type="email" name="email" placeholder="Email Adress" required>
+                        </div>
+                        <div>
+                            Phone Nr:<span class="rheader">*</span>
+                            <input type="number" name="Phone Nr" placeholder="PhoneNr" required>
+                        </div>
+                         <div>
+                            Possition:<span class="rheader">*</span>
+                            <select class="possition" name="Possition" required>
+                                <option  value=""></option>
+                                <option value="Company Driver">Company Driver</option>
+                                <option value="Owner Operator">Owner Operator</option>
+                                <option value="Driver for Owner/Operator">Driver for Owner/Operator</option>
+                                <option value="Lease purchase" >Lease purchase</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>  
+                        <div>
+                            Experence :<span class="rheader">*</span>
+                            <input type="text" name="Experence" placeholder="Experence" required>
+                        </div>
+                        <input type="hidden" name="_next" value="https://liontransgroup.us/thankyou.html">
+
+                        <button type="submit">Apply</button>
+                    </form>
+                 </div>
+            </div>
+
+            <div class="descripsion">
+                <h3>LOGISTICS SERVICES</h3>
+                <H1>CARGO <br> TRANSPORT</H1>
+                <p> 
+                     Our inside team is open to help you 24/7 <br> The dispatchers evaluate the market every day.We do all this is just to develop strategies for drivers and owner-operators in order to improve their income week by week.
+                </p>
+            </div>
+
+
+            <div class="service">
+                <div class="dispach">
+                    <img src="dispatcher-icon.png" alt="">
+                    <p>24/7 High quality dispatch</p>  
+                </div>
+                <div class="strategi">
+                    <img src="strategi-icon.png" alt="">
+                    <p>Elaborate strategies for the growth of our partners and our team</p>
+                </div>
+                <div class="gps">
+                    <img src="GPS.png" alt="">
+                    <p>24hour GPS Monitoring</p>  
+                </div>
+                <div class="transparensy">
+                    <img src="transparensy icon.png" alt="">
+                    <p>High transparensy for Owners Operators</p>
+                </div>
+            </div>
+            
+
+
+    <script src="./app.js"></script>
+    <div class="livechat">
+        <script src="https://www.momentcrm.com/embed"></script>
+        <script>
+            MomentCRM('init', 
+                {
+                'teamVanityId': 't1',
+                'doChat': true,
+                'doTracking': true,
+                });
+        </script>
+    </div>
+
+    <footer>
+        <p>© 2023 Lion Trans Group Inc. All rights reserved</p>
+    </footer>
+</body>
+</html>

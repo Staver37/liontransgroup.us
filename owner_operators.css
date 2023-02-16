@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+  }
+  body{
+    font-family: Arial, sans-serif;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.35)50%, rgba(0,0,0,0.35)50%), url(body.jpg) center / cover;
+    background-repeat: no-repeat;
+  }
+  nav {
+    background: rgba(0, 0, 0, 0.391);
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  nav .mainMenu {
+    display: flex;
+    list-style: none;
+  }
+  nav .mainMenu li a{
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    transition: 0.2s ease;
+  }
+  nav .mainMenu li a:hover {
+    color: rgb(255, 123, 0);
+  }
+  nav .openMenu {
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+  }
+  nav .mainMenu .closeMenu,
+  .icons i {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+  }
+  .fa-facebook:hover {
+    color: rgb(0, 110, 255);
+  }
+  .fa-twitter:hover {
+    color: rgb(86, 154, 243);
+  }
+  .fa-instagram:hover {
+    color: rgb(255, 0, 191);
+  }
+  .fa-github:hover {
+    color: rgb(255, 123, 0);
+  }
+  .logo img{
+    width: 200px;
+    margin-left: 20px;
+  }
+  .owner
+  {
+    margin-left: 7px;
+    width: 400px;
+    color: white;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px #0b0909;
+  }
+  .Operators
+  {
+    text-align: center;
+    color: white;
+    margin-bottom: 10px;
+    text-shadow: 3px 2px #0b0909;
+    padding-bottom: 30px;
+  }
+.compesation h2
+{
+  color: white;
+  text-shadow: 1px 3px #0b0909;
+  text-align: center;
+}
+ .compesation
+  {
+    display: flex;  
+    flex-direction: column;
+    background-color: rgba(173, 216, 230, 0.399);
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+  }
+
+.flex
+{
+  margin-top: 9px;
+  margin-bottom: 9px;
+  display: flex;  
+  flex-direction: row;
+}  
+.base_1
+{
+  background-color:rgba(240, 140, 215, 0.337);
+  margin-left: 10px;
+  border-radius: 8px 0px 0px 8px;
+  padding-left: 10px;
+  text-transform: uppercase;
+}
+
+
+.base_2
+{
+  text-align: right;
+  background-color:rgba(240, 140, 215, 0.337);
+  border-radius: 0px 10px 10px 0px;
+  margin-right: 20px;
+  padding-right: 20px;
+  font-weight: bold;
+  flex: 1;
+}
+
+.aply_button
+{
+ text-align: center;
+}
+.aply_button button
+{
+  background-color: red;
+  color: white;
+  padding: 5px 9px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.aply_button button:hover
+{
+  background-color: #4c13138b; 
+}
+
+  footer
+  {
+    position: fixed;
+    color: white;
+    font-size: 12px;
+    bottom: 2px;
+  }
+
+  @media screen and (min-width: 700px)
+  {
+    .logo-M
+      {
+        display: none;
+      }
+
+  }
+
+  @media (max-width: 700px)
+  
+  {
+
+    nav .mainMenu {
+      height: 100vh;
+      position: fixed;
+      top: 0px;
+      right: 0px;
+      left: 0px;
+      z-index: 10;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: rgb(0, 0, 0);
+      transition: top 1s ;
+      display: none;
+    }
+
+    .logo-M img
+    {
+      width: 300px;
+      margin-bottom: 20px;
+      background-color: antiquewhite;
+    }
+
+    nav .mainMenu .closeMenu
+    {
+      display: block;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+    nav .openMenu 
+    {
+      display: block;
+    }
+    nav .mainMenu li a:hover {
+      background: none;
+      color: rgb(255, 123, 0);
+    }
+    .icons i {
+      padding: 12px;
+    }
+    .logo 
+    {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .owner
+    {
+     padding-left: 20px;
+      text-align: center;
+    }
+
+
+  }
+  

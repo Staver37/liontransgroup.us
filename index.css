@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+  }
+  body{
+    font-family: Arial, sans-serif;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.359)50%, rgba(0,0,0,0.359)50%), url(body.jpg) center / cover;
+    background-repeat: no-repeat;
+  }
+  nav {
+    background: rgba(0, 0, 0, 0.391);
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  nav .mainMenu {
+    display: flex;
+    list-style: none;
+  }
+  nav .mainMenu li a{
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    transition: 0.2s ease;
+  }
+  nav .mainMenu li a:hover {
+    color: rgb(255, 123, 0);
+    border-radius: 10px;
+  }
+  nav .openMenu {
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+  }
+  nav .mainMenu .closeMenu,
+  .icons i {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+  }
+  .fa-facebook:hover {
+    color: rgb(0, 110, 255);
+  }
+  .fa-twitter:hover {
+    color: rgb(86, 154, 243);
+  }
+  .fa-instagram:hover {
+    color: rgb(255, 0, 191);
+  }
+  .fa-github:hover {
+    color: rgb(255, 123, 0);
+  }
+  .logo img{
+    width: 200px;
+    margin-left: 20px;
+  }
+  .aplication
+  {
+    width: 320px;    
+  }
+
+  .aplication h1
+{
+  text-align: center;
+  width: 320px;
+  color: white;
+  padding: 10px 0px ;
+  text-shadow: 3px 3px #0b0909;
+}
+
+.form-Content
+  {
+    margin-left: 10px;
+    position: relative;
+    width: 300px;
+    color: white;
+  }
+.form-Content input, select ,Textarea
+  {
+    position: absolute ;
+    right: 0;
+    text-align:left;
+    text-transform: capitalize;
+    background-color: rgba(246, 242, 242, 0.747);
+    color: rgb(10, 4, 4);
+    border: 1px;
+    border-radius: 2px;
+    box-shadow: 2px 2px rgb(15, 14, 14);
+    margin-bottom: 15px;
+    padding-left: 5px;
+  }
+.form-Content button
+  {
+    display: flex;
+    color: white;
+    padding: 10px 17px;
+    margin: auto;
+    margin-top: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    background-color:red; 
+  }
+  .form-Content button:hover
+  {
+    background-color: #4f0707;   }
+  .rheader 
+  {
+    font-size: 1em;
+    font-weight: 400;
+    color: rgb(228, 9, 9);
+  }
+  .descripsion
+  {
+    position: fixed;
+    margin-left: 350px;
+    margin-top: -100px;
+    color: white;
+    text-shadow: 3px 2px #473f3f;
+  }
+
+  .service
+  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 60px;
+    
+  }
+  .service p
+  {
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+  }
+
+  .service img
+  {
+    width: 100px;
+  }
+  .service img:hover
+  {
+    border-style: solid;
+  }
+
+  .dispach,
+  .strategi,
+  .gps,
+  .transparensy
+  {
+    width: 300px;
+    text-align: center;
+    color: white;
+  }
+
+
+  footer
+  {
+    position: fixed;
+    color: white;
+    font-size: 12px;
+    bottom: 2px;
+  }
+
+
+
+  @media screen and (min-width: 700px)
+  {
+    .logo-M
+      {
+        display: none;
+      }
+
+  }
+
+  @media (max-width: 700px)
+  
+  {
+
+      .service 
+      {
+        display: none;
+      }
+
+    nav .mainMenu {
+      height: 100vh;
+      position: fixed;
+      top: 0px;
+      right: 0px;
+      left: 0px;
+      z-index: 10;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: rgb(0, 0, 0);
+      transition: top 1s ;
+      display: none;
+    }
+
+    .logo-M img
+    {
+      width: 300px;
+      margin-bottom: 20px;
+      background-color: antiquewhite;
+    }
+
+    nav .mainMenu .closeMenu
+    {
+      display: block;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+    nav .openMenu 
+    {
+      display: block;
+    }
+    nav .mainMenu li a:hover {
+      background: none;
+      color: rgb(255, 123, 0);
+    }
+    .icons i {
+      display: inline-block;
+      padding: 12px;
+    }
+    .descripsion
+    {   
+      position: fixed;
+      margin-left:40px;
+      margin-right: auto;
+      margin-top: 10px;
+      color: white;
+      text-shadow: 3px 2px #473f3f;
+      
+      
+
+    }
+    .aplication
+    {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .logo 
+    {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+  }
+  
