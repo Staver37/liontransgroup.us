@@ -63,6 +63,48 @@
     margin-left: 20px;
   }
 
+    main 
+    {
+      color: white;
+      margin: 20px;
+    }
+    main h2
+    {
+      text-decoration: underline;
+      margin-top: 10px;
+      text-align: center;
+      color: rgb(233, 236, 241);
+      text-shadow: 2px 2px black;
+    }
+
+    .about-us,
+    .why-choose-us li,
+    .compensation li,
+    .driver-requirements li
+    {
+      list-style-type: none ;
+    }
+
+    .apply-now
+    {
+      text-align: center;
+      margin-top: 5px;
+    }
+    .apply-now button
+    {
+      margin-top: 5px;
+      padding: 9px;
+      color: white;
+      background-color: red;
+      border: none;
+      border-radius: 10px;
+    }
+    .apply-now button:hover
+    {
+      background-color: rgba(255, 0, 0, 0.492);
+    }
+
+
 
   footer
   {
@@ -72,21 +114,16 @@
     bottom: 2px;
   }
 
-
-
   @media screen and (min-width: 700px)
   {
     .logo-M
       {
         display: none;
       }
-
   }
-
   @media (max-width: 700px)
   
   {
-
     nav .mainMenu {
       height: 100vh;
       position: fixed;
@@ -127,7 +164,5 @@
     .icons i {
       padding: 12px;
     }
-
-
   }
   
