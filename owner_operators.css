@@ -219,7 +219,10 @@
      padding-left: 20px;
       text-align: center;
     }
-
+    body
+      {
+          Height: 1000px;
+      }
 
   }
   
