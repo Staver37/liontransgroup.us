@@ -234,5 +234,9 @@
     .icons i {
       padding: 12px;
     }
+      body
+      {
+          height: 150vh;
+      }
   }
   
