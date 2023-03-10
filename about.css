@@ -7,7 +7,7 @@
   body{
     font-family: Arial, sans-serif;
     width: 100%;
-    height: 100vh;
+    height: 200vh;
     background: linear-gradient(to left, rgba(0, 0, 0, 0.359)50%, rgba(0,0,0,0.359)50%), url(body.jpg) center / cover;
     background-repeat: no-repeat;
   }
@@ -64,6 +64,91 @@
     margin-left: 20px;
   }
 
+  .about-us h2
+  {
+    text-align: center;
+  }
+  .about-us
+  {
+    text-align: center;
+    position: absolute;
+    top: 80px;
+    left: 20px;
+    margin: 5px 30px 0px ;
+  }
+
+/* cube */
+.cube
+{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    transform-style: preserve-3d;
+    transform: rotateX(-30deg);
+    animation: animate 30s linear infinite;
+}
+@keyframes animate
+ {
+    0%
+    {
+        transform: rotateX(-30deg) rotateY(0deg);
+    }
+    100%
+    {
+        transform: rotateX(-30deg) rotateY(360deg); 
+    }
+    
+}
+.cube div
+{
+    position: absolute;
+    top: 200px;
+    left: auto;
+    right: auto;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+}
+
+.cube div span
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#151515,#00ec0032);
+    transform: rotateY(calc(90deg * var(--i))) translateZ(150px);
+    
+}
+.top
+{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.658)50%, rgba(0,0,0,0.658)50%), url(./lion_icon.png) center / cover;  
+    transform: rotateX(90deg) translateZ(150px);
+}
+.top::before
+{
+    content: '';
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 300px;
+    height: 300px;
+    background: rgba(4, 14, 4, 0.228);
+    transform: translateZ(-380px);
+    filter: blur(30px);
+    box-shadow: 0 0 120px rgba(0,255,0,0.2),
+    0 0 200px rgba(0, 255, 0, 0.985),
+    0 0 300px rgb(0, 255, 0),
+    0 0 400px rgb(0, 255, 0),
+    0 0 500px rgb(0, 255, 0);
+}
+/* cube */
 
   footer
   {
@@ -72,19 +157,38 @@
     font-size: 12px;
     bottom: 2px;
   }
-
-
-
-  @media screen and (min-width: 700px)
+  @media screen and (min-width: 900px)
   {
     .logo-M
       {
         display: none;
       }
-
+      .cube-position
+      {
+          position: absolute;
+          margin-left: 70px;
+      }
+      .description
+      {
+        position: absolute;
+        left: 530px;
+        top: 300px;
+        font-size: 19px;
+        color: white;
+        margin-right: 20px;
+      }
   }
 
-  @media (max-width: 700px)
+  @media screen and (min-width: 900px)
+  {
+    .logo-M
+      {
+        display: none;
+      }
+   
+  }
+
+  @media (max-width: 900px)
   
   {
 
@@ -128,7 +232,30 @@
     .icons i {
       padding: 12px;
     }
-
-
+    body
+    {
+      height: 800px;
+    }
+    .description   
+    {
+      position: relative;
+      top: 300px;
+      margin: 30px;
+      text-align: center;
+      color: white;
+    }
+        .cube-position
+    {
+        display: flex;
+        
+        justify-content: center;
+        margin-top: 30px;
+    }
+    body
+    {
+      height: 1700px;
+    }
+    
   }
   
+
